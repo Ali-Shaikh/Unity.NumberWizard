@@ -3,7 +3,6 @@ using System.Collections;
 
 public class NumberWizard : MonoBehaviour
 {
-
 	int max;
 	int min;
 	int guess;
@@ -14,12 +13,10 @@ public class NumberWizard : MonoBehaviour
 		StartGame();
 	}
 	
-	
-	
 	void StartGame (){
 	
-// BUG 01 [Fixed]
-//**If I type int max = value; it will not refer to the variables initialised in the begining**
+		// BUG 01 [Fixed]
+		//**If I type int max = value; it will not refer to the variables initialised in the begining**
 		max = 1000;
 		min = 1;
 		guess = 500;
@@ -35,12 +32,10 @@ public class NumberWizard : MonoBehaviour
 		// print ("The lowest number you can pick is " + max);
 		print ("The highest number you can pick is 1000");
 		
-		
 		print ("The lowest number you can pick is " + min);
 		
 		//print ("Is the number higher or lower than 500?");
 		print ("Is the number higher or lower than " + guess + "?");
-		
 		
 		//Using division to get the half of max dynamically
 		//print ("Is the number higher or lower than " + max / 2 + "?");
