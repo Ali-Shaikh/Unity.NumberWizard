@@ -4,9 +4,9 @@ using System.Collections;
 public class NumberWizard : MonoBehaviour
 {
 
-	int max = 1000;
-	int min = 1;
-	int guess = 500;
+	int max;
+	int min;
+	int guess;
 
 	// Use this for initialization
 	void Start (){
@@ -18,12 +18,24 @@ public class NumberWizard : MonoBehaviour
 	
 	void StartGame (){
 	
+// BUG 01 [Fixed]
+//**If I type int max = value; it will not refer to the variables initialised in the begining**
+		max = 1000;
+		min = 1;
+		guess = 500;
+		
 		max = max + 1;
 		
+		print ("========================");
 		print ("Welcome to Number Wizard");
 		print ("Pick a number in your head, but don't tell me!");
 		
+		// BUG 02 [Fixed]
+		// Max displaying as 1001 instead of 1000. Hard-coded 1000.
+		// print ("The lowest number you can pick is " + max);
 		print ("The highest number you can pick is 1000");
+		
+		
 		print ("The lowest number you can pick is " + min);
 		
 		//print ("Is the number higher or lower than 500?");
@@ -48,6 +60,7 @@ public class NumberWizard : MonoBehaviour
 			NextGuess();
 		} else if (Input.GetKeyDown (KeyCode.Return)) {
 			print ("I WON!");
+			StartGame();
 		}
 	}	
 	
