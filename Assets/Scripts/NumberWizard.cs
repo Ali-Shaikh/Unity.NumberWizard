@@ -19,7 +19,7 @@ public class NumberWizard : MonoBehaviour {
 		//Using division to get the half of max dynamically
 		print ("Is the number higher or lower than " + max/2 + "?");
 		
-		print ("UP arrow for highr, DOWN arrow for lower, RETURN for equal");
+		print ("UP = highr, DOWN = lower, RETURN = equal");
 		
 		
 		
