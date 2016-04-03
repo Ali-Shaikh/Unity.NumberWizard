@@ -20,7 +20,6 @@ public class NumberWizard : MonoBehaviour
 		
 		//Using division to get the half of max dynamically
 		print ("Is the number higher or lower than " + max / 2 + "?");
-		
 		print ("UP = highr, DOWN = lower, RETURN = equal");
 		
 		//Input
@@ -32,10 +31,10 @@ public class NumberWizard : MonoBehaviour
 	{
 		if (Input.GetKeyDown (KeyCode.UpArrow)) {
 			print ("UP arrow pressed");
-		}
-		
-		if (Input.GetKeyDown (KeyCode.DownArrow)) {
+		} else if (Input.GetKeyDown (KeyCode.DownArrow)) {
 			print ("DOWN arrow pressed");
+		} else if (Input.GetKeyDown (KeyCode.Return)) {
+			print ("I WON!");
 		}
 	}	
 }
