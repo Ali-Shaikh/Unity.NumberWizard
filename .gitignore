@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 
 # Created by https://www.gitignore.io/api/unity
 
 ### Unity ###
+=======
+>>>>>>> 8a2c284512d584435dbe96fdb075d6ec992d3dc4
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
@@ -28,7 +31,10 @@ ExportedObj/
 
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
+<<<<<<< HEAD
 
 # Builds
 *.apk
 *.unitypackage
+=======
+>>>>>>> 8a2c284512d584435dbe96fdb075d6ec992d3dc4
